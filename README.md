@@ -76,7 +76,7 @@
 
 5. Run `npm run all-shields-cli`
 
-See folder `examples`, run with `node example.js`. Below is available a description of `options` values and all logger methods.
+See folder `examples`, run with `node example.js`. Below is available a description of `options` values.
 
 ## 🐶 Work with Husky
 1. In your node project run: `npm install husky --save-dev` ([docs](https://www.npmjs.com/package/husky))
