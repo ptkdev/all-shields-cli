@@ -102,7 +102,7 @@ See folder `examples`, run with `node example.js`. Below is available a descript
 | message | Badge text (right side) | `string` | empty | **v1.0.0** |
 | style | Look of badge | `plastic` / `flat` / `flat-square` / `for-the-badge` / `social` | `flat` | **v1.0.0** |
 | logo | Show logo (left side) | `bitcoin` / `dependabot` / `discord` / `gitlab` / `npm` / `paypal` / `serverfault` / `stackexchange` / `superuser` / `telegram` / `travis` | empty | **v1.0.0** |
-| platform | Switch platform | `discord` | `shields` | **v1.0.0** |
+| platform | Switch platform | `discord` / `shields` | `shields` | **v1.0.0** |
 | server_id | if platform is discord, set your discord server_id | `DISCORD_SERVER_ID` | empty | **v1.0.0** |
 
 ## 🔨 Developer Mode
