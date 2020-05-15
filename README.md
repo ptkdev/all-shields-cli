@@ -24,7 +24,7 @@
 - 👨‍💻 [Contributing](#-contributing)
 - 🐛 [Known Bugs](https://github.com/ptkdev/all-shields-cli/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 - 🍻 Community:
-  - <img src="https://raw.githubusercontent.com/ptkdev/all-shields-cli/master/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/tWtqt4B) | [🇮🇹 Italian Channel](https://discord.gg/q29uZnm) | [🇵🇱 Polish Channel](https://discord.gg/akjuWJX))
+  - <img src="https://raw.githubusercontent.com/ptkdev/all-shields-cli/master/.github/assets/social_discord.png" height="18px"> [Discord](http://discord.ptkdev.io) ([🇬🇧 English Channel](https://discord.gg/FxMun2J) | [🇮🇹 Italian Channel](https://discord.gg/pR5hqBt) | [🇵🇱 Polish Channel](https://discord.gg/8CUx5dz))
 
 ## 💡 Features
 * [✔️] Easy to use
