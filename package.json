@@ -1,0 +1,78 @@
+{
+	"name": "@ptkdev/all-shields-cli",
+	"description": "Tool to help automate your badges of shields.io from a dotfile for your markdown files. Inspired by all-contributors-cli",
+	"version": "1.0.0",
+	"bin": {
+		"all-shields-generate": "cli/generate.js",
+		"all-badges-generate": "cli/generate.js",
+		"all-shields-cli": "cli/generate.js",
+		"all-badges-cli": "cli/generate.js"
+	},
+	"author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)",
+	"license": "MIT",
+	"license-docs": "CC BY 4.0",
+	"license-translations": "CC BY 4.0",
+	"license-images": "CC BY-NC 4.0",
+	"homepage": "https://all-shields-cli.ptkdev.io",
+	"docs": "https://all-shields-cli.ptkdev.io",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ptkdev/all-shields-cli.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ptkdev/all-shields-cli/issues"
+	},
+	"scripts": {
+		"example": "sudo npm link && cd examples && all-shields-generate && sudo npm unlink",
+		"clean": "rm -rf node_modules package-lock.json && npm install",
+		"update": "rm -f package-lock.json && npm update",
+		"lint": "eslint ./ --cache --ignore-pattern .gitignore",
+		"lint-fix": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+		"git-set-upstream": "git remote add upstream git@github.com:ptkdev/all-shields-cli.git && git fetch upstream",
+		"git-pull-upstream": "git pull upstream master && git pull upstream beta && git pull upstream nightly",
+		"git-pull": "git pull --recursive",
+		"git-ignore-reset": "git rm -r --cached . && git add . && git commit -m \"[Fix] Removing all files in .gitignore\"",
+		"npm-publish": "npm run clean && npm publish --access public",
+		"npm-publish-master": "git checkout master && npm publish",
+		"npm-publish-beta": "git checkout beta && npm publish --tag beta",
+		"npm-publish-nightly": "git checkout nightly && npm publish --tag nightly",
+		"docs": "git submodule update --recursive && markserv ./README.md",
+		"test": "jest",
+		"contributors-generate": "all-contributors generate"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm run lint && npm run contributors-generate"
+		}
+	},
+	"keywords": [
+		"ptkdev",
+		"badges",
+		"badge",
+		"shield",
+		"shields",
+		"shieldsio",
+		"all-shields-cli",
+		"all-contributors-cli"
+	],
+	"engines": {
+		"node": ">=10.0.0"
+	},
+	"dependencies": {
+		"@ptkdev/logger": "latest",
+		"@ptkdev/json-token-replace": "latest"
+	},
+	"devDependencies": {
+		"eslint": "latest",
+		"eslint-plugin-jsdoc": "latest",
+		"eslint-plugin-jest": "latest",
+		"all-contributors-cli": "latest",
+		"pm2": "latest",
+		"json": "latest",
+		"jest": "latest",
+		"husky": "latest",
+		"yargs": "latest",
+		"markserv": "latest"
+	},
+	"contributors": []
+}
