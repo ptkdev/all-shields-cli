@@ -1,59 +1,150 @@
 {
-  "files": [
-    "README.md"
-  ],
-  "shields": [
-    {
-        "id": "badge-top",
-        "badges": [
-            {
-                "url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
-                "color": "lightgray",
-                "label": "package name",
-                "title": "package name",
-                "message": "{{name}}",
-                "style": "flat",
-                "logo": ""
-            },
-			{
-                "url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
-                "color": "#c0392b",
-                "label": "version",
-                "title": "npm version",
-                "message": "current: {{version}}",
-                "style": "flat",
-                "logo": "npm"
-            },
-			{
-                "url": "https://discord.ptkdev.io",
-                "server_id": "383373985666301975",
-                "title": "discord server",
-                "platform": "discord"
-            }
-        ]
-    },
-    {
-        "id": "badge-bottom",
-        "badges": [
-            {
-                "url": "https://www.ptk.dev",
-                "color": "#8e44ad",
-                "label": "website",
-                "title": "my website",
-                "message": "ptkdev",
-                "style": "plastic",
-                "logo": ""
-            },
-			{
-                "url": "https://patreon.com/ptkdev",
-                "color": "#f96854",
-                "label": "donate",
-                "title": "donate on patreon",
-                "message": "patreon",
-                "style": "plastic",
-                "logo": "patreon"
-            }
-        ]
-    }
-  ]
+	"files": [
+		"README.md"
+	],
+	"shields": [
+		{
+			"id": "shields-badge",
+			"badges": [
+				{
+					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
+					"color": "lightgray",
+					"label": "package name",
+					"title": "package name",
+					"message": "{{name}}",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
+					"color": "#c0392b",
+					"label": "version",
+					"title": "npm version",
+					"message": "current: {{version}}",
+					"style": "flat",
+					"logo": "npm",
+					"platform": "shields"
+				},
+				{
+					"url": "https://www.ptk.dev",
+					"color": "#8e44ad",
+					"label": "website",
+					"title": "my website",
+					"message": "ptkdev",
+					"style": "plastic",
+					"logo": "",
+					"platform": "shields"
+				},
+				{
+					"url": "https://patreon.com/ptkdev",
+					"color": "#f96854",
+					"label": "donate",
+					"title": "donate on patreon",
+					"message": "patreon",
+					"style": "plastic",
+					"logo": "patreon",
+					"platform": "shields"
+				},
+				{
+					"custom": "/github/followers/ptkdev?label=Follow",
+					"platform": "shields"
+				},
+				{
+					"custom": "/npm/v/@ptkdev/all-shields-cli",
+					"platform": "shields"
+				}
+			]
+		},
+		{
+			"id": "badgen-badge",
+			"badges": [
+				{
+					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
+					"color": "#ae22cc",
+					"label": "package name",
+					"title": "package name",
+					"message": "{{name}}",
+					"platform": "badgen"
+				},
+				{
+					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
+					"color": "#c0392b",
+					"label": "version",
+					"title": "npm version",
+					"message": "current: {{version}}",
+					"logo": "npm",
+					"platform": "badgen"
+				},
+				{
+					"url": "https://www.ptk.dev",
+					"color": "#8e44ad",
+					"label": "website",
+					"title": "my website",
+					"message": "ptkdev",
+					"platform": "badgen"
+				},
+				{
+					"url": "https://patreon.com/ptkdev",
+					"color": "#f96854",
+					"label": "donate",
+					"title": "donate on patreon",
+					"message": "patreon",
+					"logo": "patreon",
+					"platform": "badgen"
+				},
+				{
+					"custom": "/github/assets-dl/ptkdev/all-shields-cli",
+					"platform": "badgen"
+				},
+				{
+					"custom": "/github/last-commit/ptkdev/all-shields-cli",
+					"platform": "badgen"
+				},
+				{
+					"custom": "/github/status/micromatch/micromatch/f4809eb6df80b",
+					"platform": "badgen"
+				}
+			]
+		},
+		{
+			"id": "fury-badge",
+			"badges": [
+				{
+					"url": "https://github.com/ptkdev/all-shields-cli/",
+					"title": "version",
+					"custom": "/js/%40ptkdev%2Flogger.svg",
+					"platform": "fury"
+				},
+				{
+					"url": "https://github.com/ptkdev/all-shields-cli/",
+					"title": "version",
+					"message": "%40ptkdev%2Flogger",
+					"platform": "fury"
+				}
+			]
+		},
+		{
+			"id": "snyk-badge",
+			"badges": [
+				{
+					"url": "https://github.com/ptkdev/all-shields-cli/",
+					"title": "snyk vuln checks",
+					"custom": "/test/github/ptkdev/all-shields-cli/badge.svg",
+					"platform": "snyk"
+				}
+			]
+		},
+		{
+			"id": "discord-badge",
+			"badges": [
+				{
+					"url": "https://discord.ptkdev.io",
+					"server_id": "383373985666301975",
+					"title": "discord server",
+					"platform": "discord"
+				}
+			]
+		}
+	]
 }

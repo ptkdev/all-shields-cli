@@ -1,7 +1,7 @@
 {
 	"name": "@ptkdev/all-shields-cli",
-	"description": "Tool to help automate your badges of shields.io from a dotfile for your markdown files. Inspired by all-contributors-cli",
-	"version": "1.0.1",
+	"description": "Tool to help automate your badges from dotfiles for your markdown. Inspired by all-contributors-cli",
+	"version": "1.1.0",
 	"bin": {
 		"all-shields-generate": "cli/generate.js",
 		"all-badges-generate": "cli/generate.js",
@@ -47,12 +47,22 @@
 	},
 	"keywords": [
 		"ptkdev",
+		"all-shields-cli",
+		"all-shields-generate",
 		"badges",
 		"badge",
 		"shield",
 		"shields",
 		"shieldsio",
-		"all-shields-cli",
+		"badgen",
+		"badgens",
+		"badgenio",
+		"snyk",
+		"snyks",
+		"snykio",
+		"fury",
+		"furys",
+		"furyio",
 		"all-contributors-cli"
 	],
 	"engines": {

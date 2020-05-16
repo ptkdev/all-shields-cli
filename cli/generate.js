@@ -2,7 +2,7 @@
 /**
  * CLI: all-shields-cli
  * =====================
- * Tool to help automate your badges of shields.io from a dotfile for your markdown files
+ * Tool to help automate your badges from dotfiles for your markdown.
  *
  * @contributors: Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)
  *
@@ -36,8 +36,9 @@ for (let j = 0; j < json.files.length; j++) {
 			for (let i = 0; i < json.shields[z].badges.length; i++) {
 
 				let badge = {
+					"custom": json.shields[z].badges[i].custom === undefined || json.shields[z].badges[i].custom === null ? "" : json.shields[z].badges[i].custom,
 					"url": json.shields[z].badges[i].url === undefined || json.shields[z].badges[i].url === null ? "" : json.shields[z].badges[i].url,
-					"color": json.shields[z].badges[i].color === undefined || json.shields[z].badges[i].color === null ? "" : json.shields[z].badges[i].color,
+					"color": json.shields[z].badges[i].color === undefined || json.shields[z].badges[i].color === null ? "lightgray" : json.shields[z].badges[i].color,
 					"label": json.shields[z].badges[i].label === undefined || json.shields[z].badges[i].label === null ? "" : json.shields[z].badges[i].label,
 					"title": json.shields[z].badges[i].title === undefined || json.shields[z].badges[i].title === null ? "" : json.shields[z].badges[i].title,
 					"message": json.shields[z].badges[i].message === undefined || json.shields[z].badges[i].message === null ? "" : json.shields[z].badges[i].message,
@@ -49,10 +50,40 @@ for (let j = 0; j < json.files.length; j++) {
 
 				switch (badge.platform) {
 					case "discord":
-						replacement = `${replacement}[![${badge.title}](https://discordapp.com/api/guilds/${badge.server_id}/embed.png)](${badge.url}) `;
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://discordapp.com${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://discordapp.com/api/guilds/${badge.server_id}/embed.png)](${badge.url}) `;
+						}
+					  break;
+					case "fury":
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://badge.fury.io${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://badge.fury.io/js/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url}) `;
+						}
+					  break;
+					case "snyk":
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://snyk.io${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://snyk.io/test/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url}) `;
+						}
+					  break;
+					case "badgen":
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://badgen.net${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://badgen.net/badge/${badge.label.replace(new RegExp("\\s", "g"), "%20")}/${badge.message.replace(new RegExp("\\s", "g"), "%20")}/${badge.color.replace("#", "")}/?icon=${badge.logo})](${badge.url}) `;
+						}
 					  break;
 					default:
-						replacement = `${replacement}[![${badge.title}](https://img.shields.io/badge/${badge.label.replace(" ", "%20")}-${badge.message.replace(" ", "%20")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url}) `;
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://img.shields.io${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://img.shields.io/badge/${badge.label.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}-${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url}) `;
+						}
+
 				  }
 			}
 
