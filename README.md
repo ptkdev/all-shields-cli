@@ -2,9 +2,9 @@
 
 # 🦌 Badge generator of shields.io from .all-shieldsrc dotfile
 
-[![](https://img.shields.io/badge/version-v1.0.0-lightgrey.svg)](https://github.com/ptkdev/all-shields-cli/releases) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli.svg)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/all-shields-cli/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://snyk.io/test/github/ptkdev/all-shields-cli/badge.svg)](https://snyk.io/test/github/ptkdev/all-shields-cli) [![](https://discordapp.com/api/guilds/383373985666301975/embed.png)](http://discord.ptkdev.io)
+[![](https://img.shields.io/badge/version-v1.0.1-lightgrey.svg)](https://github.com/ptkdev/all-shields-cli/releases) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli.svg)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/all-shields-cli/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://snyk.io/test/github/ptkdev/all-shields-cli/badge.svg)](https://snyk.io/test/github/ptkdev/all-shields-cli) [![](https://discordapp.com/api/guilds/383373985666301975/embed.png)](http://discord.ptkdev.io)
 
-> Tool to help automate your badges of shields.io from a dotfile for your markdown files. You can use Liquid variables like `{{name}}` or `{{version}}` which refer to your `package.json`. Inspired by [all-contributors-cli](https://www.npmjs.com/package/all-contributors-cli)
+Tool to help automate your badges of shields.io from a dotfile for your markdown files. You can use Liquid variables like `{{name}}` or `{{version}}` which refer to your `package.json`. Inspired by [all-contributors-cli](https://www.npmjs.com/package/all-contributors-cli)
 
 ## 🎁 Support: Donate
 > This project is **free**, **open source** and I try to provide excellent **free support**. Why donate? I work on this project several hours in my spare time and try to keep it up to date and working. **THANK YOU!**
@@ -19,6 +19,7 @@
 - 🚀 [How to use](#-installation)
 - 📚 [Documentation](#-documentation)
 - - 🧰 [Options](#-options-badges-array)
+- - 🔑 [Liquid Variables](#-liquid-variables)
 - - 🐶 [With Husky](#-work-with-husky)
 - 🔨 [Developer Mode](#-developer-mode)
 - 👨‍💻 [Contributing](#-contributing)
@@ -77,6 +78,10 @@
 5. Run `npm run all-shields-cli`
 
 See folder `examples`, run with `node example.js`. Below is available a description of `options` values.
+
+
+## 🔑 Liquid variables
+In your `.all-shieldsrc` dotfile you can use liquid variables like {{name}} or {{version}} which refer to your `package.json`. Key of `package.json` is name of liquid variable `{{key_from_package.json}}`
 
 ## 🐶 Work with Husky
 1. In your node project run: `npm install husky --save-dev` ([docs](https://www.npmjs.com/package/husky))
