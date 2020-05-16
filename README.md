@@ -55,26 +55,26 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io and snyk.io
 3. Create `.all-shieldsrc` and paste sample:
 ```javascript
 {
-  "files": [
-    "README.md"
-  ],
-  "shields": [
-    {
-        "id": "my-badges",
-        "badges": [
-            {
-                "url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
-                "color": "lightgray",
-                "label": "package name",
-                "title": "package name",
-                "message": "{{name}}",
-                "style": "flat",
-				"logo": "",
-				"platform": "shields"
-            }
-        ]
-    }
-  ]
+	"files": [
+		"README.md"
+	],
+	"shields": [
+		{
+			"id": "my-badges",
+			"badges": [
+				{
+					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
+					"color": "lightgray",
+					"label": "package name",
+					"title": "package name",
+					"message": "{{name}}",
+					"style": "flat",
+					"logo": "",
+					"platform": "shields"
+				}
+			]
+		}
+	]
 }
 ```
 4. Add in your `README.md` the html comment (`my-badges` is `id` from the previous step):
@@ -148,7 +148,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://ptk.dev"><img src="https://avatars1.githubusercontent.com/u/442844?v=4" width="100px;" alt=""/><br /><sub><b>Patryk Rzucidło</b></sub></a><br /><a href="https://github.com/ptkdev/all-shields-cli/commits?author=ptkdev" title="Code">💻</a> <a href="#translation-ptkdev" title="Translation">🌍</a> <a href="https://github.com/ptkdev/all-shields-cli/commits?author=ptkdev" title="Documentation">📖</a> <a href="https://github.com/ptkdev/all-shields-cli/issues?q=author%3Aptkdev" title="Bug reports">🐛</a></td>
+	<td align="center"><a href="https://ptk.dev"><img src="https://avatars1.githubusercontent.com/u/442844?v=4" width="100px;" alt=""/><br /><sub><b>Patryk Rzucidło</b></sub></a><br /><a href="https://github.com/ptkdev/all-shields-cli/commits?author=ptkdev" title="Code">💻</a> <a href="#translation-ptkdev" title="Translation">🌍</a> <a href="https://github.com/ptkdev/all-shields-cli/commits?author=ptkdev" title="Documentation">📖</a> <a href="https://github.com/ptkdev/all-shields-cli/issues?q=author%3Aptkdev" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
