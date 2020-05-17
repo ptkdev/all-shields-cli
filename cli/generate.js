@@ -70,6 +70,13 @@ for (let j = 0; j < json.files.length; j++) {
 							replacement = `${replacement}[![${badge.title}](https://snyk.io/test/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url}) `;
 						}
 					  break;
+					case "github":
+						if (badge.custom !== "") {
+							replacement = `${replacement}[![${badge.title}](https://github.com/${badge.custom})](${badge.url}) `;
+						} else {
+							replacement = `${replacement}[![${badge.title}](https://github.com/${badge.message}.svg)](${badge.url}) `;
+						}
+					  break;
 					case "badgen":
 						if (badge.custom !== "") {
 							replacement = `${replacement}[![${badge.title}](https://badgen.net${badge.custom})](${badge.url}) `;

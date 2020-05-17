@@ -145,6 +145,17 @@
 					"platform": "discord"
 				}
 			]
+		},
+		{
+			"id": "github-badge",
+			"badges": [
+				{
+					"url": "https://github.com/fastify/fastify/actions",
+					"title": "github action",
+					"custom": "/fastify/fastify/workflows/ci/badge.svg",
+					"platform": "github"
+				}
+			]
 		}
 	]
 }

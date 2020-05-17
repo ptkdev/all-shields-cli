@@ -2,9 +2,9 @@
 
 # 🦌 Badges generator from dotfiles for any markdown
 
-[![](https://img.shields.io/badge/version-v1.1.0-lightgrey.svg)](https://github.com/ptkdev/all-shields-cli/releases) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli.svg)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/all-shields-cli/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://snyk.io/test/github/ptkdev/all-shields-cli/badge.svg)](https://snyk.io/test/github/ptkdev/all-shields-cli) [![](https://discordapp.com/api/guilds/383373985666301975/embed.png)](http://discord.ptkdev.io)
+[![](https://img.shields.io/badge/version-v1.2.0-lightgrey.svg)](https://github.com/ptkdev/all-shields-cli/releases) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli.svg)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/ptkdev/all-shields-cli/blob/master/LICENSE.md) [![](https://img.shields.io/badge/ES-9-F7DF1E.svg)](https://wikipedia.org/wiki/ECMAScript) [![](https://snyk.io/test/github/ptkdev/all-shields-cli/badge.svg)](https://snyk.io/test/github/ptkdev/all-shields-cli) [![](https://discordapp.com/api/guilds/383373985666301975/embed.png)](http://discord.ptkdev.io)
 
-Tool to help automate your badges of shields.io, badgen.net, fury.io and snyk.io from `.all-shieldsrc` dotfile for your markdown files. You can use Liquid variables like `{{name}}` or `{{version}}` which refer to your `package.json`. Inspired by [all-contributors-cli](https://www.npmjs.com/package/all-contributors-cli)
+Tool to help automate your badges of shields.io, badgen.net, fury.io, github action and snyk.io from `.all-shieldsrc` dotfile for your markdown files. You can use Liquid variables like `{{name}}` or `{{version}}` which refer to your `package.json`. Inspired by [all-contributors-cli](https://www.npmjs.com/package/all-contributors-cli)
 
 ## 🎁 Support: Donate
 > This project is **free**, **open source** and I try to provide excellent **free support**. Why donate? I work on this project several hours in my spare time and try to keep it up to date and working. **THANK YOU!**
@@ -34,6 +34,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io and snyk.io
 * [✔️] Support: fury.io
 * [✔️] Support: snyk.io
 * [✔️] Support: badgen.net
+* [✔️] Support: github action
 * [✔️] Full customizations!
 * [✔️] Liquid Variables
 * [✔️] Tool to help automate your badges on markdown.
@@ -108,12 +109,12 @@ In your `.all-shieldsrc` dotfile you can use liquid variables like {{name}} or {
 
 | Parameter | Description | Values | Default value | Available on platforms | Available since |
 | --- | --- | --- | --- | --- | --- |
-| platform | Define platform | `discord` / `shields` / `fury` / `snyk` / `badgen` | `shields` | | **v1.0.0** |
-| custom | Set custom string of image url (appended after domain url of badge service) | `string` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen` | **v1.1.0** |
-| url | If you click on badge open this url | `URI` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen` | **v1.0.0** |
+| platform | Define platform | `discord` / `shields` / `fury` / `snyk` / `badgen` / `github` | `shields` | | **v1.0.0** |
+| custom | Set custom string of image url (appended after domain url of badge service) | `string` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.1.0** |
+| url | If you click on badge open this url | `URI` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.0.0** |
 | color | Badge hexcode color (right side). NOTE: Overwrited if `custom` is set. | `string` / `hexcode` | `lightgray` | `shields`, `badgen` | **v1.0.0** |
 | label | Badge text (left side). NOTE: Overwrited if `custom` is set. | `string` | empty | `shields`, `badgen` | **v1.0.0** |
-| title | Mouse hover alt text | `string` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen` | **v1.0.0** |
+| title | Mouse hover alt text | `string` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.0.0** |
 | message | Badge text (right side). NOTE: Overwrited if `custom` is set. | `string` | empty | `discord`, `shields`, `fury`, `snyk`, `badgen` |  **v1.0.0** |
 | style | Look of badge.  NOTE: Overwrited if `custom` is set. | `plastic` / `flat` / `flat-square` / `for-the-badge` / `social` | `flat` | `shields` | **v1.0.0** |
 | logo | Show logo (left side).  NOTE: Overwrited if `custom` is set. | shields: `bitcoin` , `dependabot` , `discord` , `gitlab` , `npm` , `paypal` , `serverfault` , `stackexchange` , `superuser` , `telegram` , `travis` and more on [docs](https://shields.io/). <br><br> badgen: `airbnb`, `apple`, `appveyor`, `atom`, `awesome`, `azure`, `azurepipelines`, `bitcoin`, `buymeacoffee`, `chrome`, `circleci`, `cocoapods`, `codacy`, `codebeat`, `codeclimate`, `codecov`, `codeship`, `commonwl`, `deepscan`, `dependabot`, `discord`, `dockbit`, `docker`, `eclipse`, `firefox`, `flow`, `git`, `github`, `gitlab`, `gitter`, `googleplay`, `graphql`, `haskell`, `jsdelivr` and more on [docs](https://badgen.net/) | empty | `shields`, `badgen` | **v1.0.0** |

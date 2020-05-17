@@ -37,3 +37,11 @@ Open and close html comment with this id after `all-shields/` tag, badges will a
 
 <!-- all-shields/discord-badge:START -->
 <!-- all-shields/discord-badge:END -->
+
+# Example of github platform
+`github-badge` is 6° id from `.all-shieldsrc` array
+
+Open and close html comment with this id after `all-shields/` tag, badges will appear in the middle after you run command
+
+<!-- all-shields/github-badge:START -->
+<!-- all-shields/github-badge:END -->
