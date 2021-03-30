@@ -1,7 +1,7 @@
 {
 	"name": "@ptkdev/all-shields-cli",
 	"description": "Tool to help automate your badges from dotfiles for your markdown. Inspired by all-contributors-cli",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"bin": {
 		"all-shields-generate": "cli/generate.js",
 		"all-badges-generate": "cli/generate.js",
