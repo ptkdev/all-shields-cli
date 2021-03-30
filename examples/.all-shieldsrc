@@ -21,7 +21,7 @@
 					"color": "#c0392b",
 					"label": "version",
 					"title": "node version",
-					"message": "v{{node.version}}",
+					"message": "{{node.version}}",
 					"style": "flat",
 					"logo": "node",
 					"platform": "shields"
@@ -31,7 +31,7 @@
 					"color": "#8e44ad",
 					"label": "website",
 					"title": "my website",
-					"message": "ptkdev",
+					"message": "https://www.ptk.dev",
 					"style": "plastic",
 					"logo": "",
 					"platform": "shields"
@@ -46,6 +46,15 @@
 					"logo": "patreon",
 					"platform": "shields"
 				},
+				{
+					"url": "{{repository.url}}",
+					"color": "#1e90ff",
+					"label": "repository",
+					"title": "repository",
+					"message": "{{repository.url_with_double_quote | replace( '"', '\\"')}}",
+					"style": "plastic",
+					"platform": "shields"
+        },
 				{
 					"custom": "/github/followers/ptkdev?label=Follow",
 					"platform": "shields"

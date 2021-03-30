@@ -11,6 +11,7 @@
  */
 const fs = require("fs");
 const nunjucks = require("nunjucks");
+nunjucks.configure({autoescape: false});
 const logger = new (require("@ptkdev/logger"))();
 var pkg = {}, rc = {files: []}, errors = 0;
 
@@ -88,7 +89,7 @@ for (let j = 0; j < json.files.length; j++) {
 						if (badge.custom !== "") {
 							replacement = `${replacement}[![${badge.title}](https://img.shields.io${badge.custom})](${badge.url}) `;
 						} else {
-							replacement = `${replacement}[![${badge.title}](https://img.shields.io/badge/${badge.label.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}-${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url}) `;
+							replacement = `${replacement}[![${badge.title}](https://img.shields.io/badge/${encodeURIComponent(badge.label).replace(new RegExp("-", "g"), "--")}-${encodeURIComponent(badge.message).replace(new RegExp("-", "g"), "--")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url}) `;
 						}
 
 				  }
