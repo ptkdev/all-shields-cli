@@ -70,20 +70,21 @@
 		"node": ">=10.0.0"
 	},
 	"dependencies": {
-		"@ptkdev/logger": "latest",
-		"@ptkdev/json-token-replace": "latest"
+		"@ptkdev/logger": "^1.7.2",
+		"chokidar": "^3.5.1",
+		"nunjucks": "^3.2.3"
 	},
 	"devDependencies": {
-		"eslint": "latest",
-		"eslint-plugin-jsdoc": "latest",
-		"eslint-plugin-jest": "latest",
-		"all-contributors-cli": "latest",
-		"pm2": "latest",
-		"json": "latest",
-		"jest": "latest",
-		"husky": "latest",
-		"yargs": "latest",
-		"markserv": "latest"
+		"all-contributors-cli": "^6.20.0",
+		"eslint": "^7.23.0",
+		"eslint-plugin-jest": "^24.3.2",
+		"eslint-plugin-jsdoc": "^32.3.0",
+		"husky": "^2.0.0",
+		"jest": "^26.6.3",
+		"json": "^10.0.0",
+		"markserv": "^1.17.4",
+		"pm2": "^4.5.5",
+		"yargs": "^16.2.0"
 	},
 	"contributors": []
 }

@@ -10,19 +10,19 @@
  *
  */
 const fs = require("fs");
+const nunjucks = require("nunjucks");
 const logger = new (require("@ptkdev/logger"))();
-const jtr = new (require("@ptkdev/json-token-replace"))();
 var pkg = {}, rc = {files: []}, errors = 0;
 
 try {
 	pkg = JSON.parse(fs.readFileSync(`${process.cwd()}/package.json`));
-	rc = JSON.parse(fs.readFileSync(`${process.cwd()}/.all-shieldsrc`));
+	rc = fs.readFileSync(`${process.cwd()}/.all-shieldsrc`);
 } catch (err) {
 	logger.error(err, "import files");
 	errors++;
 }
 
-let json = jtr.replace(pkg, rc);
+let json = JSON.parse(nunjucks.renderString(rc.toString(), pkg));
 for (let j = 0; j < json.files.length; j++) {
 	fs.readFile(json.files[j], "utf8", (err, markdown) => {
 		if (err) {
