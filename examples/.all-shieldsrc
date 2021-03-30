@@ -47,6 +47,15 @@
 					"platform": "shields"
 				},
 				{
+					"url": "{{repository.url}}",
+					"color": "#1e90ff",
+					"label": "repository",
+					"title": "repository",
+					"message": "{{repository.url_with_double_quote | replace( '"', '\\"')}}",
+					"style": "plastic",
+					"platform": "shields"
+        },
+				{
 					"custom": "/github/followers/ptkdev?label=Follow",
 					"platform": "shields"
 				},
