@@ -1,6 +1,6 @@
 [![all-shields-cli](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/ptkdev-all-shields-cli-logo.png)](https://www.npmjs.com/package/@ptkdev/all-shields-cli)
 
-# 🪓 all-shields-cli
+# 🦌 all-shields-cli - badges generator
 
 <!-- all-shields/header-badges:START -->
 

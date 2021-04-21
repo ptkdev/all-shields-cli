@@ -27,8 +27,8 @@ export interface DotfilesResponseInterface {
 	/**
 	 * Error
 	 * =====================
-	 * Get error description
+	 * Get error description from catch(err)
 	 *
 	 */
-	error: string
+	error?: string
 }

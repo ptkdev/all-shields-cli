@@ -15,25 +15,23 @@ test("cli run", async () => {
 
 		const df = await readDotFiles();
 
-		if (!df.error) {
-			const merge = await mergeDotFiles({ pkg: df.pkg, rc: df.rc });
-
-			if (!merge.error) {
-				const badge = await generate({ json: merge.json });
-
-				if (!badge.error) {
-					return true;
-				} else {
-					return false;
-				}
-
-			} else {
-				return false;
-			}
-
-		} else {
+		if (df.error) {
 			return false;
 		}
+
+		const merge = await mergeDotFiles({ pkg: df.pkg, rc: df.rc });
+
+		if (merge.error) {
+			return false;
+		}
+
+		const badge = await generate({ json: merge.json });
+
+		if (badge.error) {
+			return false;
+		}
+
+		return true;
 	}
 
 	expect(await cli()).toBe(true);

@@ -79,7 +79,7 @@ export interface ShieldInterface {
 	 * Shield Interface
 	 * =====================
 	 *
-	 * @param {string} style - available style on shields.io
+	 * @param {"plastic" | "flat" | "flat-square" | "for-the-badge" | "social" | ""} style - available style on shields.io
 	 *
 	 */
 	style: "plastic" | "flat" | "flat-square" | "for-the-badge" | "social" | ""
@@ -103,7 +103,7 @@ export interface ShieldInterface {
 	 * Shield Interface
 	 * =====================
 	 *
-	 * @param {string} platform - available platform: "discord" | "fury" | "snyk" | "github" | "badgen" | "shields"
+	 * @param {"discord" | "fury" | "snyk" | "github" | "badgen" | "shields"} platform - available platforms
 	 *
 	 */
 	platform: "discord" | "fury" | "snyk" | "github" | "badgen" | "shields"

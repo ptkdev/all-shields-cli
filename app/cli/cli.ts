@@ -18,23 +18,25 @@ const logger = console;
 (async () => {
 	const df = await readDotFiles();
 
-	if (!df.error) {
-		const merge = await mergeDotFiles({ pkg: df.pkg, rc: df.rc });
-
-		if (!merge.error) {
-			const badge = await generate({ json: merge.json });
-
-			if (!badge.error) {
-				logger.error("SUCCESS!", "DONE!");
-			} else {
-				logger.error("FAILED!", `Generate Error: ${JSON.stringify(badge.error)}`);
-			}
-
-		} else {
-			logger.error("FAILED!", `Merge Error: ${JSON.stringify(merge.error)}`);
-		}
-
-	} else {
+	if (df.error) {
 		logger.error("FAILED!", `Read Error: ${JSON.stringify(df.error)}`);
+		return;
 	}
+
+	const merge = await mergeDotFiles({ pkg: df.pkg, rc: df.rc });
+
+	if (merge.error) {
+		logger.error("FAILED!", `Merge Error: ${JSON.stringify(merge.error)}`);
+		return;
+	}
+
+	const badge = await generate({ json: merge.json });
+
+	if (badge.error) {
+		logger.error("FAILED!", `Generate Error: ${JSON.stringify(badge.error)}`);
+		return;
+	}
+
+	logger.error("SUCCESS!", "DONE!");
+	return;
 })();
