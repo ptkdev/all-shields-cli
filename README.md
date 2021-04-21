@@ -67,7 +67,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 ```javascript
 	...
 	"scripts": {
-		"all-shields-cli": "all-shields-cli"
+		"all-shields-generate": "all-shields-cli"
 	}
 	...
 ```
@@ -106,7 +106,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 <!-- all-shields/my-badges:END -->
 ```
 
-5. Run `npm run all-shields-cli`
+5. Run `npm run all-shields-generate`
 
 See folder `examples`, run with `node example.js`. Below is available a description of `options` values.
 
