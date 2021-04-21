@@ -176,7 +176,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://ptk.dev"><img src="https://avatars1.githubusercontent.com/u/442844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Patryk Rzucidło</b></sub></a><br /><a href="https://github.com/ptkdev/ptkdev/all-shields-cli/commits?author=ptkdev" title="Code">💻</a> <a href="#translation-ptkdev" title="Translation">🌍</a> <a href="https://github.com/ptkdev/ptkdev/all-shields-cli/commits?author=ptkdev" title="Documentation">📖</a> <a href="https://github.com/ptkdev/ptkdev/all-shields-cli/issues?q=author%3Aptkdev" title="Bug reports">🐛</a></td>
-    <td align="center"><a href="hhttps://github.com/di4urp"><img src="https://avatars1.githubusercontent.com/u/44859500?v=4?s=100" width="100px;" alt=""/><br /><sub><b>di4urp</b></sub></a><br /><a href="https://github.com/ptkdev/ptkdev/all-shields-cli/commits?author=di4urp" title="Code">💻</a> <a href="https://github.com/ptkdev/ptkdev/all-shields-cli/issues?q=author%3Adi4urp" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/di4urp"><img src="https://avatars1.githubusercontent.com/u/44859500?v=4?s=100" width="100px;" alt=""/><br /><sub><b>di4urp</b></sub></a><br /><a href="https://github.com/ptkdev/ptkdev/all-shields-cli/commits?author=di4urp" title="Code">💻</a> <a href="https://github.com/ptkdev/ptkdev/all-shields-cli/issues?q=author%3Adi4urp" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
