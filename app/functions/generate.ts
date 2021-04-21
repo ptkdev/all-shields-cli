@@ -46,44 +46,44 @@ const badges = async ({ shield }: { shield: ShieldInterface }): Promise<string> 
 	switch (badge.platform) {
 		case "discord":
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://discordapp.com${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://discordapp.com${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://discordapp.com/api/guilds/${badge.server_id}/embed.png)](${badge.url}) `;
+				markdown = `[![${badge.title}](https://discordapp.com/api/guilds/${badge.server_id}/embed.png)](${badge.url})`;
 			}
 			break;
 		case "fury":
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://badge.fury.io${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://badge.fury.io${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://badge.fury.io/js/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url}) `;
+				markdown = `[![${badge.title}](https://badge.fury.io/js/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url})`;
 			}
 			break;
 		case "snyk":
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://snyk.io${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://snyk.io${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://snyk.io/test/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url}) `;
+				markdown = `[![${badge.title}](https://snyk.io/test/${badge.message.replace(new RegExp("\\s", "g"), "%20").replace(new RegExp("-", "g"), "--")}.svg)](${badge.url})`;
 			}
 			break;
 		case "github":
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://github.com/${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://github.com/${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://github.com/${badge.message}.svg)](${badge.url}) `;
+				markdown = `[![${badge.title}](https://github.com/${badge.message}.svg)](${badge.url})`;
 			}
 			break;
 		case "badgen":
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://badgen.net${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://badgen.net${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://badgen.net/badge/${badge.label.replace(new RegExp("\\s", "g"), "%20")}/${badge.message.replace(new RegExp("\\s", "g"), "%20")}/${badge.color.replace("#", "")}/?icon=${badge.logo})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://badgen.net/badge/${badge.label.replace(new RegExp("\\s", "g"), "%20")}/${badge.message.replace(new RegExp("\\s", "g"), "%20")}/${badge.color.replace("#", "")}/?icon=${badge.logo})](${badge.url})`;
 			}
 			break;
 		default:
 			if (badge.custom !== "") {
-				markdown = `[![${badge.title}](https://img.shields.io${badge.custom})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://img.shields.io${badge.custom})](${badge.url})`;
 			} else {
-				markdown = `[![${badge.title}](https://img.shields.io/badge/${encodeURIComponent(badge.label).replace(new RegExp("-", "g"), "--")}-${encodeURIComponent(badge.message).replace(new RegExp("-", "g"), "--")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url}) `;
+				markdown = `[![${badge.title}](https://img.shields.io/badge/${encodeURIComponent(badge.label).replace(new RegExp("-", "g"), "--")}-${encodeURIComponent(badge.message).replace(new RegExp("-", "g"), "--")}-${badge.color.replace("#", "")}.svg?style=${badge.style}&logo=${badge.logo})](${badge.url})`;
 			}
 	}
 
