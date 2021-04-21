@@ -5,11 +5,9 @@
 	"version": "2.0.0",
 	"main": "dist/cli/cli.js",
 	"bin": {
-		"all-shields-cli": "dist/cli/cli.js",
 		"@ptkdev/all-shields-cli": "dist/cli/cli.js",
-		"all-shields-generate": "dist/cli/cli.js",
-		"all-badges-generate": "dist/cli/cli.js",
-		"all-badges-cli": "dist/cli/cli.js"
+		"all-shields-cli": "dist/cli/cli.js",
+		"all-shields-generate": "dist/cli/cli.js"
 	},
 	"publishConfig": {
 		"access": "public"

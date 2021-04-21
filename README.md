@@ -25,8 +25,8 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 -   💡 [Features](#-features)
 -   👔 [Screenshot](#-screenshot)
 -   🚀 [How to use](#-how-to-use)
--   -   ⚙️ [CLI](#-cli)
 -   -   🔧 [installation](#-installation)
+-   -   ⚙️ [CLI](#-cli)
 -   📚 [Documentation](#-documentation)
 -   -   🔑 [Liquid Variables](#-liquid-variables)
 -   -   🧰 [Options](#-options-badges-array)
@@ -55,16 +55,9 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 
 ## 👔 Screenshot
 
-[![all-shields-cli](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)
+[![all-shields-cli](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot.png)](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot.png)
 
 ## 🚀 How to use
-
-##### ⚙️ CLI
-
-1. Install cli package globally: `npm install @ptkdev/all-shields-cli -g`
-2. Run anywhere: `all-shields-cli`
-
-You can use npx, example: `npx @ptkdev/all-shields-cli`
 
 #### 🔧 Installation
 
@@ -74,7 +67,7 @@ You can use npx, example: `npx @ptkdev/all-shields-cli`
 ```javascript
 	...
 	"scripts": {
-		"all-shields-cli": "all-shields-generate"
+		"all-shields-cli": "all-shields-cli"
 	}
 	...
 ```
@@ -116,6 +109,13 @@ You can use npx, example: `npx @ptkdev/all-shields-cli`
 5. Run `npm run all-shields-cli`
 
 See folder `examples`, run with `node example.js`. Below is available a description of `options` values.
+
+##### ⚙️ CLI
+
+1. Install cli package globally: `npm install @ptkdev/all-shields-cli -g`
+2. Run anywhere: `all-shields-cli`
+
+You can use npx, example: `npx @ptkdev/all-shields-cli`
 
 ## 🔑 Liquid variables
 
