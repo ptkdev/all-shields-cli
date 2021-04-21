@@ -4,7 +4,7 @@
 
 <!-- all-shields/header-badges:START -->
 
-[![v2.0.0](https://img.shields.io/badge/version-v2.0.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev/all-shields-cli/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev/all-shields-cli/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io) 
+[![v2.0.0](https://img.shields.io/badge/version-v2.0.0-lightgray.svg?style=flat&logo=)](https://github.com/ptkdev/all-shields-cli/blob/main/CHANGELOG.md) [![](https://img.shields.io/npm/v/@ptkdev/all-shields-cli?color=CC3534&logo=npm)](https://www.npmjs.com/package/@ptkdev/all-shields-cli) [![License: MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat&logo=license)](https://github.com/ptkdev/all-shields-cli/blob/main/LICENSE.md) [![Language: TypeScript](https://img.shields.io/badge/language-typescript-blue.svg?style=flat&logo=typescript)](https://www.typescriptlang.org/) [![ECMAScript: 2019](https://img.shields.io/badge/ES-9-F7DF1E.svg?style=flat&logo=javascript)](https://github.com/tc39/ecma262) [![Discord Server](https://discordapp.com/api/guilds/383373985666301975/embed.png)](https://discord.ptkdev.io)
 
 <!-- all-shields/header-badges:END -->
 
@@ -16,7 +16,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 
 <!-- all-shields/sponsors-badges:START -->
 
-[![Donate Paypal](https://img.shields.io/badge/donate-paypal-005EA6.svg?style=for-the-badge&logo=paypal)](https://www.paypal.me/ptkdev) [![Donate Ko-Fi](https://img.shields.io/badge/donate-ko--fi-29abe0.svg?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/ptkdev) [![Donate Github Sponsors](https://img.shields.io/badge/donate-sponsors-ea4aaa.svg?style=for-the-badge&logo=github)](https://github.com/sponsors/ptkdev) [![Donate Patreon](https://img.shields.io/badge/donate-patreon-F87668.svg?style=for-the-badge&logo=patreon)](https://www.patreon.com/join/ptkdev) [![Donate Bitcoin](https://img.shields.io/badge/BTC-35jQmZCy4nsxoMM3QPFrnZePDVhdKaHMRH-E38B29.svg?style=flat-square&logo=bitcoin)](https://ptk.dev/img/icons/menu/bitcoin_wallet.png) [![Donate Ethereum](https://img.shields.io/badge/ETH-0x8b8171661bEb032828e82baBb0B5B98Ba8fBEBFc-4E8EE9.svg?style=flat-square&logo=ethereum)](https://ptk.dev/img/icons/menu/ethereum_wallet.png) 
+[![Donate Paypal](https://img.shields.io/badge/donate-paypal-005EA6.svg?style=for-the-badge&logo=paypal)](https://www.paypal.me/ptkdev) [![Donate Ko-Fi](https://img.shields.io/badge/donate-ko--fi-29abe0.svg?style=for-the-badge&logo=ko-fi)](https://ko-fi.com/ptkdev) [![Donate Github Sponsors](https://img.shields.io/badge/donate-sponsors-ea4aaa.svg?style=for-the-badge&logo=github)](https://github.com/sponsors/ptkdev) [![Donate Patreon](https://img.shields.io/badge/donate-patreon-F87668.svg?style=for-the-badge&logo=patreon)](https://www.patreon.com/join/ptkdev) [![Donate Bitcoin](https://img.shields.io/badge/BTC-35jQmZCy4nsxoMM3QPFrnZePDVhdKaHMRH-E38B29.svg?style=flat-square&logo=bitcoin)](https://ptk.dev/img/icons/menu/bitcoin_wallet.png) [![Donate Ethereum](https://img.shields.io/badge/ETH-0x8b8171661bEb032828e82baBb0B5B98Ba8fBEBFc-4E8EE9.svg?style=flat-square&logo=ethereum)](https://ptk.dev/img/icons/menu/ethereum_wallet.png)
 
 <!-- all-shields/sponsors-badges:END -->
 
@@ -28,11 +28,10 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 -   -   ⚙️ [CLI](#-cli)
 -   -   🔧 [installation](#-installation)
 -   📚 [Documentation](#-documentation)
--   -   🧰 [Options](#-options-badges-array)
 -   -   🔑 [Liquid Variables](#-liquid-variables)
+-   -   🧰 [Options](#-options-badges-array)
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   🏁 [Run Project](#-run-project)
--   -   💾 [Setup Project](#-setup-project)
 -   👨‍💻 [Contributing](#-contributing)
 -   🐛 [Known Bugs](https://github.com/ptkdev/all-shields-cli/issues?q=is%3Aopen+is%3Aissue+label%3Abug)
 -   🍻 Community:
@@ -53,11 +52,10 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 -   [✔️] Liquid Variables
 -   [✔️] Tool to help automate your badges on markdown.
 -   [✔️] Badges generator from dotfiles for any markdown
--   [✔️] Translations: 🇬🇧 🇮🇹 🇵🇱 (Help me ❤️)
 
 ## 👔 Screenshot
 
-[![Badges generator from dotfiles for any markdown](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)
+[![all-shields-cli](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)](https://raw.githubusercontent.com/ptkdev/all-shields-cli/main/.github/assets/screenshot/screenshot.png)
 
 ## 🚀 How to use
 
@@ -94,7 +92,7 @@ You can use npx, example: `npx @ptkdev/all-shields-cli`
 			"badges": [
 				{
 					"url": "https://www.npmjs.com/package/@ptkdev/all-shields-cli",
-					"color": "lightgray",
+					"color": "#D3D3D3",
 					"label": "package name",
 					"title": "package name",
 					"message": "{{name}}",
@@ -123,6 +121,21 @@ See folder `examples`, run with `node example.js`. Below is available a descript
 
 In your `.all-shieldsrc` dotfile you can use liquid variables like {{name}} or {{version}} which refer to your `package.json`. Key of `package.json` is name of liquid variable `{{key_from_package.json}}`
 
+## 🧰 Options: Badges Array
+
+| Parameter | Description                                                                 | Values                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Default value | Available on platforms                                   | Available since |
+| --------- | --------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------------------------------------------------- | --------------- |
+| platform  | Define platform                                                             | `discord` / `shields` / `fury` / `snyk` / `badgen` / `github`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | `shields`     |                                                          | **v1.0.0**      |
+| custom    | Set custom string of image url (appended after domain url of badge service) | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | empty         | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.1.0**      |
+| url       | If you click on badge open this url                                         | `URI`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | empty         | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.0.0**      |
+| color     | Badge hexcode color (right side). NOTE: Overwrited if `custom` is set.      | `string` / `hexcode`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 | `lightgray`   | `shields`, `badgen`                                      | **v1.0.0**      |
+| label     | Badge text (left side). NOTE: Overwrited if `custom` is set.                | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | empty         | `shields`, `badgen`                                      | **v1.0.0**      |
+| title     | Mouse hover alt text                                                        | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | empty         | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.0.0**      |
+| message   | Badge text (right side). NOTE: Overwrited if `custom` is set.               | `string`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | empty         | `discord`, `shields`, `fury`, `snyk`, `badgen`, `github` | **v1.0.0**      |
+| style     | Look of badge. NOTE: Overwrited if `custom` is set.                         | `plastic` / `flat` / `flat-square` / `for-the-badge` / `social`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | `flat`        | `shields`                                                | **v1.0.0**      |
+| logo      | Show logo (left side). NOTE: Overwrited if `custom` is set.                 | shields: `bitcoin` , `dependabot` , `discord` , `gitlab` , `npm` , `paypal` , `serverfault` , `stackexchange` , `superuser` , `telegram` , `travis` and more on [docs](https://shields.io/). <br><br> badgen: `airbnb`, `apple`, `appveyor`, `atom`, `awesome`, `azure`, `azurepipelines`, `bitcoin`, `buymeacoffee`, `chrome`, `circleci`, `cocoapods`, `codacy`, `codebeat`, `codeclimate`, `codecov`, `codeship`, `commonwl`, `deepscan`, `dependabot`, `discord`, `dockbit`, `docker`, `eclipse`, `firefox`, `flow`, `git`, `github`, `gitlab`, `gitter`, `googleplay`, `graphql`, `haskell`, `jsdelivr` and more on [docs](https://badgen.net/) | empty         | `shields`, `badgen`                                      | **v1.0.0**      |
+| server_id | if platform is discord, set your discord server_id                          | `DISCORD_SERVER_ID`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | empty         | `discord`                                                | **v1.0.0**      |
+
 ## 🔨 Developer Mode
 
 #### 🏁 Run Project
@@ -133,10 +146,6 @@ In your `.all-shieldsrc` dotfile you can use liquid variables like {{name}} or {
 4. Run `all-shields-cli` anywhere for execute command line tool
 
 or run `npm run dev` for watch mode.
-
-#### 💾 Setup Project
-
-If you want replace all strings (example: package name, author, urls, etc...) in markdown file, source files and others files of this project you need edit `setup.json` with correct values and run `npm run setup`.
 
 ## 📚 Documentation
 
@@ -174,25 +183,25 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- all-shields/projects-badges1:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%92%BB%20My-Portfolio-3498db.svg?style=flat&logo=)](https://ptk.dev/) 
+[![](https://img.shields.io/badge/%F0%9F%92%BB%20My-Portfolio-3498db.svg?style=flat&logo=)](https://ptk.dev/)
 
 <!-- all-shields/projects-badges1:END -->
 
 <!-- all-shields/projects-badges2:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%A6%92%20Tools-Node%20Logger-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-logger) [![](https://img.shields.io/badge/%F0%9F%A6%8C%20Tools-All%20Shields%20CLI-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/all-shields-cli) [![](https://img.shields.io/badge/%F0%9F%96%A5%EF%B8%8F%20Tools-Aspect%20Ratio%2021%3A9-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/chrome-extension-aspectratio219) [![](https://img.shields.io/badge/%F0%9F%9B%A1%20Tools-Badges%3A%20Available%20on-9b59b6.svg?style=flat&logo=)](https://availableon.badge.ptkdev.io/) [![](https://img.shields.io/badge/%F0%9F%90%BE%20Tools-JSON%20Token%20Replace-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/json-token-replace) [![](https://img.shields.io/badge/%F0%9F%90%8D%20Tools-ESLint%3A%20snakecasejs-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/eslint-plugin-snakecasejs) 
+[![](https://img.shields.io/badge/%F0%9F%A6%92%20Tools-Node%20Logger-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-logger) [![](https://img.shields.io/badge/%F0%9F%A6%8C%20Tools-All%20Shields%20CLI-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/all-shields-cli) [![](https://img.shields.io/badge/%F0%9F%96%A5%EF%B8%8F%20Tools-Aspect%20Ratio%2021%3A9-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/chrome-extension-aspectratio219) [![](https://img.shields.io/badge/%F0%9F%9B%A1%20Tools-Badges%3A%20Available%20on-9b59b6.svg?style=flat&logo=)](https://availableon.badge.ptkdev.io/) [![](https://img.shields.io/badge/%F0%9F%90%BE%20Tools-JSON%20Token%20Replace-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/json-token-replace) [![](https://img.shields.io/badge/%F0%9F%90%8D%20Tools-ESLint%3A%20snakecasejs-9b59b6.svg?style=flat&logo=)](https://github.com/ptkdev/eslint-plugin-snakecasejs)
 
 <!-- all-shields/projects-badges2:END -->
 
 <!-- all-shields/projects-badges3:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%93%B8%20WebComponent-Instagram%20Widget-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-instagram-widget) [![](https://img.shields.io/badge/%F0%9F%91%91%20WebComponent-My%20Patreon%20Box-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-patreon-box) [![](https://img.shields.io/badge/%F0%9F%8F%9E%20WebComponent-Carousel%20Slideshow-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-carousel-slideshow) 
+[![](https://img.shields.io/badge/%F0%9F%93%B8%20WebComponent-Instagram%20Widget-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-instagram-widget) [![](https://img.shields.io/badge/%F0%9F%91%91%20WebComponent-My%20Patreon%20Box-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-patreon-box) [![](https://img.shields.io/badge/%F0%9F%8F%9E%20WebComponent-Carousel%20Slideshow-e74c3c.svg?style=flat&logo=)](https://github.com/ptkdev-components/webcomponent-carousel-slideshow)
 
 <!-- all-shields/projects-badges3:END -->
 
 <!-- all-shields/projects-badges4:START -->
 
-[![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Svelte-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=svelte) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-WebComponents-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=webcomponent) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-BOT-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=bot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Node-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=node) [![](https://img.shields.io/badge/%F0%9F%92%85%20App-Me%20in%20Gifs-2ecc71.svg?style=flat&logo=)](https://meingifs.pics/) [![](https://img.shields.io/badge/%F0%9F%93%B1%20App-Stickers-2ecc71.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-stickers#-install-free) 
+[![](https://img.shields.io/badge/%F0%9F%8E%A8%20Themes-VSCode-f1c40f.svg?style=flat&logo=)](https://github.com/ptkdev/vscode-theme-dark-blood) [![](https://img.shields.io/badge/%F0%9F%93%9A%20Bot-GameBookChat-34495e.svg?style=flat&logo=)](https://t.me/gamebookchatbot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Svelte-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=svelte) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-WebComponents-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=webcomponent) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-BOT-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=bot) [![](https://img.shields.io/badge/%F0%9F%91%94%20Boilerplate-Node-f368e0.svg?style=flat&logo=)](https://github.com/ptkdev?q=node) [![](https://img.shields.io/badge/%F0%9F%92%85%20App-Me%20in%20Gifs-2ecc71.svg?style=flat&logo=)](https://meingifs.pics/) [![](https://img.shields.io/badge/%F0%9F%93%B1%20App-Stickers-2ecc71.svg?style=flat&logo=)](https://github.com/ptkdev/ptkdev-stickers#-install-free)
 
 <!-- all-shields/projects-badges4:END -->
 
