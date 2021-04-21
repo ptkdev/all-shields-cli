@@ -9,7 +9,6 @@
  * @license: MIT License
  *
  */
-import type { ShieldInterface } from "./shield.type";
 
 /**
  * ReadDotFiles Interface

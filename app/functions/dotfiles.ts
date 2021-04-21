@@ -31,16 +31,16 @@ export const readDotFiles = async (): Promise<ReadDotfilesResponseInterface> => 
 	let rc = "";
 
 	try {
-		pkg = readFile(`${process.cwd()}/package.json`).toString();
+		pkg = (await readFile(`${process.cwd()}/package.json`)).toString();
 	} catch (error) {
 		return { pkg, rc, error };
 	}
 
 	try {
-		rc = readFile(`${process.cwd()}/.all-shieldsrc`).toString();
+		rc = (await readFile(`${process.cwd()}/.all-shieldsrc`)).toString();
 	} catch (error) {
 		try {
-			rc = readFile(`${process.cwd()}/.all-shieldsrc.json`).toString();
+			rc = (await readFile(`${process.cwd()}/.all-shieldsrc.json`)).toString();
 		} catch (error) {
 			return { pkg, rc, error };
 		}
@@ -68,7 +68,7 @@ export const mergeDotFiles = async ({ pkg, rc }: ReadDotfilesResponseInterface):
 	let json = "";
 
 	try {
-		json = JSON.parse(njk.nunjucks.renderString(pkg, JSON.parse(rc)));
+		json = JSON.parse(njk.nunjucks.renderString(rc, JSON.parse(pkg)));
 	} catch (error) {
 		return { json, error };
 	}

@@ -27,7 +27,7 @@ const readFile = util.promisify(fs.readFile);
  *
  * @return {string} markdown - json of badge converted to markdown string
  */
-const badges = async({ shield }: { shield: ShieldInterface }): Promise<string> => {
+const badges = async ({ shield }: { shield: ShieldInterface }): Promise<string> => {
 	let markdown = "";
 
 	const badge: ShieldInterface = {
@@ -124,7 +124,7 @@ export const generate = async ({ json }: MergeDotfilesResponseInterface): Promis
 				}
 			}
 
-			file = file.replace(new RegExp(`(<!-- all-shields/${json.shields[z].id}:START -->)([\\S\\s]*)(<!-- all-shields/${json.shields[z].id}:END -->)`, "gm"), `$1\n<!-- prettier-ignore-start -->\n<!-- markdownlint-disable -->\n${markdown}\n<!-- markdownlint-restore -->\n<!-- prettier-ignore-end -->\n$3`);
+			file = file.replace(new RegExp(`(<!-- all-shields/${json.shields[z].id}:START -->)([\\S\\s]*)(<!-- all-shields/${json.shields[z].id}:END -->)`, "gm"), `$1\n\n${markdown}\n\n$3`);
 		}
 
 		try {

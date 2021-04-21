@@ -51,7 +51,7 @@
 		"npm-publish-beta": "git checkout beta && npm publish --tag beta",
 		"npm-publish-nightly": "git checkout nightly && npm publish --tag nightly",
 		"contributors-generate": "all-contributors generate",
-		"all-shields-generate": "dist/cli/cli.js",
+		"all-shields-generate": "node dist/cli/cli.js",
 		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
 		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
 		"pkg-update": "npm update",
