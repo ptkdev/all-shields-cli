@@ -29,6 +29,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 -   -   ⚙️ [CLI](#-cli)
 -   📚 [Documentation](#-documentation)
 -   -   🔑 [Liquid Variables](#-liquid-variables)
+-   -   🐶 [With Husky](#-work-with-husky)
 -   -   🧰 [Options](#-options-badges-array)
 -   🔨 [Developer Mode](#-developer-mode)
 -   -   🏁 [Run Project](#-run-project)
@@ -120,6 +121,12 @@ You can use npx, example: `npx @ptkdev/all-shields-cli`
 ## 🔑 Liquid variables
 
 In your `.all-shieldsrc` dotfile you can use liquid variables like {{name}} or {{version}} which refer to your `package.json`. Key of `package.json` is name of liquid variable `{{key_from_package.json}}`
+
+## 🐶 Work with Husky
+
+1. In your node project run: `npm install husky --save-dev` ([docs](https://www.npmjs.com/package/husky))
+2. Setup husky with: `npx husky install`
+3. Add hook: `npx husky add .husky/pre-commit "npm run all-shields-generate"`
 
 ## 🧰 Options: Badges Array
 
