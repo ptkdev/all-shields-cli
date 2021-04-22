@@ -57,7 +57,7 @@ export interface ReadDotfilesResponseInterface {
  */
 export interface MergeDotfilesResponseInterface {
 	/**
-	 * Read package.json
+	 * Read merge json
 	 * =====================
 	 * JSON of all-shieldsrc dotfile with liquid variables from package.json keys
 	 *

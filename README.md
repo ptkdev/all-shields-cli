@@ -65,7 +65,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 1. In your node project run: `npm install @ptkdev/all-shields-cli --save-dev`
 2. In your `package.json` add script:
 
-```javascript
+```json
 	...
 	"scripts": {
 		"all-shields-generate": "all-shields-cli"
@@ -75,11 +75,9 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 
 3. Create `.all-shieldsrc` and paste sample:
 
-```javascript
+```json
 {
-	"files": [
-		"README.md"
-	],
+	"files": ["README.md"],
 	"shields": [
 		{
 			"id": "my-badges",
