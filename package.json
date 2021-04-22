@@ -1,20 +1,23 @@
 {
 	"name": "@ptkdev/all-shields-cli",
-	"description": "Tool to help automate your badges from dotfiles for your markdown. Inspired by all-contributors-cli",
-	"version": "1.3.0",
+	"displayName": "Badges generator from dotfiles for any markdown",
+	"description": "Tool to help automate your badges of shields.io, badgen.net, fury.io, github action and snyk.io from .all-shieldsrc dotfile for your markdown files. You can use Liquid variables like {{name}} or {{version}} which refer to your package.json. Inspired by all-contributors-cli",
+	"version": "2.0.0",
+	"main": "dist/cli/cli.js",
 	"bin": {
-		"all-shields-generate": "cli/generate.js",
-		"all-badges-generate": "cli/generate.js",
-		"all-shields-cli": "cli/generate.js",
-		"all-badges-cli": "cli/generate.js"
+		"@ptkdev/all-shields-cli": "dist/cli/cli.js",
+		"all-shields-cli": "dist/cli/cli.js",
+		"all-shields-generate": "dist/cli/cli.js"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"author": "Patryk Rzucidło [@ptkdev] <support@ptkdev.io> (https://ptk.dev)",
 	"license": "MIT",
 	"license-docs": "CC BY 4.0",
 	"license-translations": "CC BY 4.0",
 	"license-images": "CC BY-NC 4.0",
-	"homepage": "https://all-shields-cli.ptkdev.io",
-	"docs": "https://all-shields-cli.ptkdev.io",
+	"homepage": "https://github.com/ptkdev/all-shields-cli",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ptkdev/all-shields-cli.git"
@@ -22,28 +25,68 @@
 	"bugs": {
 		"url": "https://github.com/ptkdev/all-shields-cli/issues"
 	},
+	"engines": {
+		"node": ">=14.0.0"
+	},
 	"scripts": {
-		"example": "sudo npm link && cd examples && all-shields-generate && sudo npm unlink",
-		"clean": "rm -rf node_modules package-lock.json && npm install",
-		"update": "rm -f package-lock.json && npm update",
-		"lint": "eslint ./ --cache --ignore-pattern .gitignore",
-		"lint-fix": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+		"init": "npm install && husky install",
+		"start": "node dist/cli/cli.js",
+		"link": "npm link",
+		"unlink": "npm unlink @ptkdev/all-shields-cli",
+		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && nodemon --exec 'npm run build && npm run start'",
+		"build": "ttsc",
+		"example": "cd examples && node ../dist/cli/cli.js && cd ..",
+		"release": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --disable && npm run build && ttsc --declaration --emitDeclarationOnly",
+		"test": "jest app",
+		"docs": "git submodule update --recursive && markserv ./README.md",
+		"lint": "npm run lint-prettify && eslint . --cache --ext .ts,.js",
+		"lint-fix": "npm run lint-prettify && eslint . --cache --ext .ts,.js --fix",
+		"lint-prettify": "prettier --write **/*.{ts,md,json}",
 		"git-set-upstream": "git remote add upstream git@github.com:ptkdev/all-shields-cli.git && git fetch upstream",
-		"git-pull-upstream": "git pull upstream master && git pull upstream beta && git pull upstream nightly",
+		"git-pull-upstream": "git pull upstream main && git pull upstream beta && git pull upstream nightly",
 		"git-pull": "git pull --recursive",
 		"git-ignore-reset": "git rm -r --cached . && git add . && git commit -m \"[Fix] Removing all files in .gitignore\"",
-		"npm-publish": "npm run clean && npm publish --access public",
-		"npm-publish-master": "git checkout master && npm publish",
+		"npm-publish-main": "git checkout main && npm publish",
 		"npm-publish-beta": "git checkout beta && npm publish --tag beta",
 		"npm-publish-nightly": "git checkout nightly && npm publish --tag nightly",
-		"docs": "git submodule update --recursive && markserv ./README.md",
-		"test": "jest",
-		"contributors-generate": "all-contributors generate"
+		"contributors-generate": "all-contributors generate",
+		"all-shields-generate": "node dist/cli/cli.js",
+		"pre-commit": "npm run contributors-generate && npm run all-shields-generate && npm run lint-fix && npm run test",
+		"pkg-clean": "rm -rf node_modules package-lock.json && npm install && husky install",
+		"pkg-update": "npm update",
+		"pkg-upgrade": "npx npm-check-updates -u && npm install && husky install"
 	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "npm run lint && npm run contributors-generate"
-		}
+	"dependencies": {
+		"@ptkdev/logger": "^1.7.2",
+		"chokidar": "^3.5.1",
+		"nunjucks": "^3.2.3"
+	},
+	"devDependencies": {
+		"@types/jest": "^26.0.22",
+		"@types/node": "^14.14.41",
+		"@types/nunjucks": "^3.1.4",
+		"@types/shelljs": "^0.8.8",
+		"@typescript-eslint/eslint-plugin": "^4.22.0",
+		"@typescript-eslint/parser": "^4.22.0",
+		"all-contributors-cli": "^6.20.0",
+		"eslint": "^7.24.0",
+		"eslint-plugin-jest": "^24.3.5",
+		"eslint-plugin-jsdoc": "^32.3.0",
+		"husky": "^6.0.0",
+		"jest": "^26.6.3",
+		"json": "^10.0.0",
+		"markserv": "^1.17.4",
+		"nodemon": "^2.0.7",
+		"pm2": "^4.5.6",
+		"prettier": "^2.2.1",
+		"replace-in-file": "^6.2.0",
+		"shelljs": "^0.8.4",
+		"ts-jest": "^26.5.5",
+		"ts-node": "^9.1.1",
+		"ttypescript": "^1.5.12",
+		"typescript": "^4.2.4",
+		"typescript-transform-paths": "^2.2.3",
+		"yargs": "^16.2.0"
 	},
 	"keywords": [
 		"ptkdev",
@@ -66,25 +109,7 @@
 		"github action",
 		"all-contributors-cli"
 	],
-	"engines": {
-		"node": ">=10.0.0"
-	},
-	"dependencies": {
-		"@ptkdev/logger": "^1.7.2",
-		"chokidar": "^3.5.1",
-		"nunjucks": "^3.2.3"
-	},
-	"devDependencies": {
-		"all-contributors-cli": "^6.20.0",
-		"eslint": "^7.23.0",
-		"eslint-plugin-jest": "^24.3.2",
-		"eslint-plugin-jsdoc": "^32.3.0",
-		"husky": "^2.0.0",
-		"jest": "^26.6.3",
-		"json": "^10.0.0",
-		"markserv": "^1.17.4",
-		"pm2": "^4.5.5",
-		"yargs": "^16.2.0"
-	},
-	"contributors": []
+	"contributors": [
+		"di4urp [@di4urp] (https://github.com/di4urp)"
+	]
 }

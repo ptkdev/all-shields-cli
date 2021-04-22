@@ -1,27 +1,37 @@
 {
-  "projectName": "all-shields-cli",
-  "projectOwner": "ptkdev",
-  "repoType": "github",
-  "repoHost": "https://github.com",
-  "files": [
-    "README.md"
-  ],
-  "imageSize": 100,
-  "commit": true,
-  "contributors": [
-    {
-      "login": "ptkdev",
-      "name": "Patryk Rzucidło",
-      "avatar_url": "https://avatars1.githubusercontent.com/u/442844?v=4",
-      "profile": "https://ptk.dev",
-      "contributions": [
-        "code",
-        "translation",
-        "doc",
-        "bug"
-      ]
-    }
-  ],
-  "contributorsPerLine": 6,
-  "commitConvention": "none"
+	"projectName": "ptkdev/all-shields-cli",
+	"projectOwner": "ptkdev",
+	"repoType": "github",
+	"repoHost": "https://github.com",
+	"files": [
+		"README.md"
+	],
+	"imageSize": 100,
+	"commit": true,
+	"contributors": [
+		{
+			"login": "ptkdev",
+			"name": "Patryk Rzucidło",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/442844?v=4",
+			"profile": "https://ptk.dev",
+			"contributions": [
+				"code",
+				"translation",
+				"doc",
+				"bug"
+			]
+		},
+		{
+			"login": "di4urp",
+			"name": "di4urp",
+			"avatar_url": "https://avatars1.githubusercontent.com/u/44859500?v=4",
+			"profile": "https://github.com/di4urp",
+			"contributions": [
+				"code",
+				"bug"
+			]
+		}
+	],
+	"contributorsPerLine": 6,
+	"commitConvention": "none"
 }
