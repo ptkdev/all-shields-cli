@@ -32,7 +32,7 @@
 		"init": "npm install && husky install",
 		"start": "node dist/cli/cli.js",
 		"link": "npm link",
-		"unlink": "npm unlink",
+		"unlink": "npm unlink @ptkdev/all-shields-cli",
 		"dev": "ts-node scripts/configs.ts && ts-node scripts/debug.ts --enable && ts-node scripts/rmdist.ts && nodemon --exec 'npm run build && npm run start'",
 		"build": "ttsc",
 		"example": "cd examples && node ../dist/cli/cli.js && cd ..",
