@@ -2,7 +2,7 @@
 	"name": "@ptkdev/all-shields-cli",
 	"displayName": "Badges generator from dotfiles for any markdown",
 	"description": "Tool to help automate your badges of shields.io, badgen.net, fury.io, github action and snyk.io from .all-shieldsrc dotfile for your markdown files. You can use Liquid variables like {{name}} or {{version}} which refer to your package.json. Inspired by all-contributors-cli",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"main": "dist/cli/cli.js",
 	"bin": {
 		"@ptkdev/all-shields-cli": "dist/cli/cli.js",
@@ -57,7 +57,6 @@
 		"pkg-upgrade": "npx npm-check-updates -u && npm install && husky install"
 	},
 	"dependencies": {
-		"@ptkdev/logger": "^1.7.2",
 		"chokidar": "^3.5.1",
 		"nunjucks": "^3.2.3"
 	},
