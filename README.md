@@ -26,7 +26,7 @@ Tool to help automate your badges of shields.io, badgen.net, fury.io, github act
 -   👔 [Screenshot](#-screenshot)
 -   🚀 [How to use](#-how-to-use)
 -   -   🔧 [installation](#-installation)
--   -   ⚙️ [CLI](#-cli)
+-   -   ⚙️ [CLI](#%EF%B8%8F-cli)
 -   📚 [Documentation](#-documentation)
 -   -   🔑 [Liquid Variables](#-liquid-variables)
 -   -   🐶 [With Husky](#-work-with-husky)
